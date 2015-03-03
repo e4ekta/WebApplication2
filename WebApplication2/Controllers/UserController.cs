@@ -30,6 +30,7 @@ namespace WebApplication2.Controllers
         {
             this.userRepository.SaveUser(user);
 
+            //var response = Request.CreateResponse<User>(System.Net.HttpStatusCode.Created, user);
             var response = Request.CreateResponse<User>(System.Net.HttpStatusCode.Created, user);
 
             return response;
